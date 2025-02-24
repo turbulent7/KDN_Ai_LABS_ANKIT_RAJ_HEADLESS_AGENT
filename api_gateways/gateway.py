@@ -25,7 +25,7 @@ if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
 
 from event_bus.kafka_producer import send_to_kafka
-from transformation.transform import transform_data
+from transformations.transform import transform_data
 
 @app.post("/process-data")
 def process_data(file_path: str):
