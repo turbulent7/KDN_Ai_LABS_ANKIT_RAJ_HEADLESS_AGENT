@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from adapters.soap_adapter import soap_to_json
+from adapters.soap_adapters import soap_to_json
 from adapters.file_adapter import process_file
 
 from event_bus.kafka_producer import send_to_kafka
-from transformation.transform import transform_data
+from transformations.transform import transform_data
 
 
 app = FastAPI()
