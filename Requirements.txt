@@ -5,3 +5,5 @@ zeep
 pydantic 
 kafka-python 
 pandas
+streamlit
+
